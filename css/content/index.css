@@ -1,0 +1,26 @@
+#content{
+    text-align: center;
+}
+#logoContent{
+    margin-top: 5px;
+}
+#mapsZoomOut{
+    width:600px;
+    height:450px;
+    transition: width 0.5s, height 0.5s;
+}
+#mapsZoomIn{
+    width:600px;
+    height:450px;
+    transition: width 0.5s, height 0.5s;
+}
+@media screen and (max-width: 850px){
+    #mapsZoomOut{
+        width:300px;
+        height:225px;
+    }
+    #mapsZoomIn{
+        width:300px;
+        height:225px;
+    }
+}

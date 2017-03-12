@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+#content{
+    width: 80vw;
+    height: Calc(100vh - 53px);
+    background-color: #9cc3d5;
+    margin:auto;
+    transition: height 0.5s;
+    overflow-y: auto;
+}
+@media screen and (max-height: 500px){
+    #content{
+        width: 80vw;
+        height: Calc(100vh - 25px);
+        background-color: #9cc3d5;
+        margin:auto;
+    }
+}
