@@ -1,0 +1,18 @@
+.geland{
+    background-color: green;
+}
+.vertrokken{
+    background-color: deepskyblue;
+}
+.afgelast{
+    background-color: red;
+}
+.aantocht{
+    background-color: yellow;
+}
+.vertraagd{
+    background-color: orange;
+}
+td a{
+    text-decoration: none;
+}
