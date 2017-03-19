@@ -1,0 +1,38 @@
+/*ANIMATION*/
+@keyframes highlight {
+    from {color: blue; background-color: #b6d5e4}
+    to {color: black; background-color: #468dbf}
+}
+.vliegtuigSection{
+    padding-left: 5px;
+    background-color: #7caed5;
+}
+.vliegtuigSection:target{
+    background-color: #468dbf;
+    animation-name: highlight;
+    animation-duration: 3s;
+}
+.vliegtuigKader{
+    background-color: #2f64ab;
+    width: 300px;
+    display: inline-block;
+}
+.vliegtuigKader img{
+    width: 100%;
+}
+.vliegtuigKader span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #7caed5;
+    font-weight: bold;
+}
+h1{
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 330px){
+    .vliegtuigKader{
+        width: 200px;
+    }
+}

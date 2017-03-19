@@ -1,26 +1,29 @@
 #content{
     text-align: center;
 }
-#logoContent{
-    margin-top: 5px;
+.map{
+    width:600px;
+    height:450px;
+    transition: width 0.5s, height 0.5s;
+}
+#route ul{
+    text-align: left;
 }
 #mapsZoomOut{
-    width:600px;
-    height:450px;
-    transition: width 0.5s, height 0.5s;
+    border-radius: 15px;
 }
 #mapsZoomIn{
-    width:600px;
-    height:450px;
-    transition: width 0.5s, height 0.5s;
+    border-radius: 15px;
 }
 @media screen and (max-width: 850px){
-    #mapsZoomOut{
+    .map{
         width:300px;
         height:225px;
     }
-    #mapsZoomIn{
-        width:300px;
-        height:225px;
+}
+@media screen and (max-width: 460px){
+    .map{
+        width:200px;
+        height:200px;
     }
 }

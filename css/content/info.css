@@ -1,0 +1,18 @@
+/*ANIMATION*/
+@keyframes highlight {
+    from {color: blue; background-color: #b6d5e4}
+    to {color: black; background-color: #7caed5}
+}
+
+.answer:target{
+    background-color: #7caed5;
+    animation-name: highlight;
+    animation-duration: 3s;
+}
+#question a{
+    color: blue;
+    text-decoration: none;
+}
+#content{
+    padding-left: 5px;
+}

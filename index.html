@@ -2,6 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AirWings</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/content/index.css">
@@ -11,8 +12,7 @@
 <body>
     <header>
         <div id="banner">
-            <img src="images/AirWings_loge.png" alt="AirWings" id="logoHead" class="logo"><span>AirWings</span>
-            <!--TODO Some useful info or slogan or logo-->
+            <img src="images/AirWings_logo.png" alt="AirWings" id="logoHead" class="logo"><span>AirWings: Wij vliegen met de vogels</span>
         </div>
         <nav id="navigationBar">
             <ul>
@@ -28,20 +28,89 @@
     </header>
 
     <div id="content">
-        <img src="images/AirWings_loge.png" alt="AirWings" id="logoContent" class="logo"><h1 id="title">Welkom bij AirWings.</h1>
-        <h2 id="beschrijving">Beschrijving</h2>
-        ...
-        <h2>Locatie</h2>
-        <iframe id="mapsZoomOut" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113965.38993834879!2d7.023645411223474!3d50.86258772942639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f194286572d%3A0xa5f621d00b2b0c16!2sEurowings+Aviation+GmbH!5e0!3m2!1sen!2sbe!4v1489348365018" allowfullscreen></iframe>
-        <iframe id="mapsZoomIn"     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28482.46459735268!2d7.055459032220475!3d50.877122787661634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f194286572d%3A0xa5f621d00b2b0c16!2sEurowings+Aviation+GmbH!5e0!3m2!1sen!2sbe!4v1489348432977" allowfullscreen></iframe>
-        <h2>Route</h2>
-        ...
-        <!--TODO Deze pagina bevat het logo en moet voor de bezoekers aantrekkelijk werken.
-        Verder toont deze pagina een korte maar aantrekkelijke beschrijving.
-        Er is ook een kaartje met de ligging van de luchthaven: één uitgezoomd,
-        zodat de plaats van de luchthaven kan herkend worden ten opzichte van andere grote steden, en één ingezoomd,
-        waarbij de inplanting van de luchthaven in de stad wordt weergegeven.
-        Geef hier ook onder elkaar weer hoe de luchthaven – op verschillende manieren – te bereiken is.-->
+        <img src="images/AirWings_logo.png" alt="AirWings" id="logoContent" class="logo">
+        <h1 id="title">Welkom bij AirWings.</h1>
+        <article id="beschrijving">
+            <header>
+                <h2>Beschrijving</h2>
+            </header>
+            <p>AirWings is een Belgische vliegtuigmaatchappij die voor vluchten zorgt binnen Europa.</p>
+        </article>
+        <article id="locatie">
+            <header>
+                <h2>Locatie</h2>
+            </header>
+
+            <iframe class="map" id="mapsZoomOut"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113965.38993834879!2d7.023645411223474!3d50.86258772942639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f194286572d%3A0xa5f621d00b2b0c16!2sEurowings+Aviation+GmbH!5e0!3m2!1sen!2sbe!4v1489348365018"
+                    allowfullscreen></iframe>
+            <iframe class="map" id="mapsZoomIn"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28482.46459735268!2d7.055459032220475!3d50.877122787661634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f194286572d%3A0xa5f621d00b2b0c16!2sEurowings+Aviation+GmbH!5e0!3m2!1sen!2sbe!4v1489348432977"
+                    allowfullscreen></iframe>
+        </article>
+        <article id="route">
+            <header>
+                <h2>Route</h2>
+            </header>
+            <ul>
+                <!--WESTEN-->
+                <li>Vanuit het <b>westen</b> te bereiken via:
+                    <ul>
+                        <li>
+                            <b>autobaan 4</b>
+                            <ol>
+                                <li>Neem autobaan 4 tot het einde en neem de afslag rechts op autobaan 559</li>
+                                <li>U komt terecht op autobaan 59 en slaat af aan afslag 34 links</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <b>Thalys</b>
+                            <ol>
+                                <li>Neem de Thalys tot in Keulen(Cologne Central Station)</li>
+                                <li>Neem de tram RE 10823 Koblenz tot aan de halte van de luchthaven.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <!--ZUID-OOSTEN-->
+                <li>Vanuit het <b>zuid-oosten</b> te bereiken via:
+                    <ul>
+                        <li>
+                            <b>autobaan 3</b>
+                            <ol>
+                                <li>Neem autobaan 3 tot afslag 32 links.</li>
+                                <li>U bevindt zich op autobaan 560 die uitmondt op autobaan 59, neem deze tot afslag 34 rechts.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <!--NOORD-OOSTEN-->
+                <li>Vanuit het <b>noord-oosten</b> te bereiken via:
+                    <ul>
+                        <li>
+                            <b>autobaan 2</b>
+                            <ol>
+                                <li>Neem autobaan 2 tot afslag 16 links.</li>
+                                <li>U bevindt zich op autobaan 1, neem deze tot afslag 98 links.</li>
+                                <li>U bevindt zich op autobaan 3, neem deze tot afslag 34 links.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <!--NOORDEN-->
+                <li>Vanuit het <b>noorden</b> te bereiken via:
+                    <ul>
+                        <li>
+                            <b>autobaan 1</b>
+                            <ol>
+                                <li>Neem autobaan 1 tot afslag 98 links.</li>
+                                <li>U bevindt zich op autobaan 3, neem deze tot afslag 34 links.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
     </div>
     <footer>
 

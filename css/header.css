@@ -1,14 +1,14 @@
 /*
 GENERAL HEADER
  */
-header {
+body > header{
     width: 100vw;
     top: 0;
     left: 0;
     background: linear-gradient(to bottom, #4696ff, #3587ff, #4696ff);
     border-bottom: solid #2f64ab 2px;
     border-top: solid #2f64ab 2px;
-    height: Calc(21px + 28px);
+    height: Calc(21px + 75px);
     transition: height 0.5s;
 }
 
@@ -17,10 +17,12 @@ BANNER
  */
 #banner {
     transition: height 0.5s;
-    height: 28px;
+    height: 75px;
     /*border-bottom: solid #2f64ab 2px;*/
-    width: 100%;
-    text-align: center;
+    width: 80%;
+    margin: auto;
+
+
 
 }
 #logoHead{
@@ -28,7 +30,8 @@ BANNER
 }
 #banner span{
     font-weight: bold;
-    font-size: 1.2em;
+    vertical-align: 7px;
+    font-size: 1.8em;
 }
 
 /*
@@ -77,12 +80,36 @@ NAVIGATOR
     cursor: default;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.5) 100%)!important;
 }
-@media screen and (max-height: 500px){
-    header {
+@media screen and (max-height: 900px) and (min-height: 700px){
+    body > header {
+        height: Calc(21px + 40px);
+    }
+    #banner{
+        height: 40px;
+    }
+}
+@media screen and (max-height: 700px){
+    body > header {
         height: 21px;
     }
     #banner{
         visibility: hidden;
         height: 0;
+    }
+}@media screen and (max-width: 740px){
+    #banner span{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 400px){
+    #navigationBar ul li a {
+        font-size: small;
+        height: 21px;
+    }
+    #banner span{
+        display: none;
+    }
+    #banner{
+        text-align: center;
     }
 }

@@ -4,17 +4,25 @@ body{
 }
 #content{
     width: 80vw;
-    height: Calc(100vh - 53px);
+    height: Calc(100vh - 100px);
     background-color: #9cc3d5;
     margin:auto;
     transition: height 0.5s;
     overflow-y: auto;
 }
-@media screen and (max-height: 500px){
+@media screen and (max-height: 900px) and (min-height: 700px){
     #content{
-        width: 80vw;
+        height: Calc(100vh - 65px);
+    }
+}
+@media screen and (max-height: 700px){
+    #content{
         height: Calc(100vh - 25px);
-        background-color: #9cc3d5;
-        margin:auto;
+    }
+}
+@media screen and (max-width: 500px){
+    #content{
+        width: 100vw;
+        margin:0;
     }
 }

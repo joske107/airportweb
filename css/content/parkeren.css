@@ -1,0 +1,26 @@
+table input{
+    width: 300px;
+    border-radius: 10px;
+    padding-left: 2px;
+}
+
+table{
+    background-color: #3587ff;
+    padding: 2px;
+    display: inline-block;
+}
+
+#content{
+    padding-left: 5px;
+}
+
+#submit{
+    margin-left: 55px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 420px){
+    table input{
+        width: 200px;
+    }
+}

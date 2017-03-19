@@ -2,6 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AirWings</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/content/parkeren.css">
@@ -11,8 +12,7 @@
 <body>
 <header>
     <div id="banner">
-        <img src="../images/AirWings_loge.png" alt="AirWings" id="logoHead" class="logo"><span>AirWings</span>
-        <!--TODO Some useful info or slogan or logo-->
+        <img src="../images/AirWings_logo.png" alt="AirWings" id="logoHead" class="logo"><span>AirWings: Wij vliegen met de vogels</span>
     </div>
     <nav id="navigationBar">
         <ul>
@@ -28,9 +28,53 @@
 </header>
 
 <div id="content">
-    <!--TODO Hier vinden we uitleg over de parkeermogelijkheden met de bijhorende tarieven duidelijk voorgesteld.
-Er is ook een mogelijkheid om parkeerplaats te reserveren aan de hand van een invulformulier.
-Zorg dat het formulier realistisch bruikbaar is…-->
+    <h1>Parkeerplaatsen</h1>
+    <p>Er zijn 758 parkeerplaatsen in totaal. Deze zijn allemaal met onderstaand tarief. Ook is er een kis&ride waar er plaats is voor 100 personenwagens en 5 bussen.</p>
+    <h2>Tarieven</h2>
+    <table>
+        <caption>Grootte</caption>
+        <tr><td>Klein</td><td>€5</td></tr>
+        <tr><td>Middelmatig</td><td>€8</td></tr>
+        <tr><td>Groot</td><td>€10</td></tr>
+    </table>
+    <table>
+        <caption>Duratie</caption>
+        <tr><td>0 - 7 dagen</td><td>€5/dag</td></tr>
+        <tr><td>8 - 28 dagen</td><td>€30/week</td></tr>
+        <tr><td>> 28 dagen</td><td>€35/week</td></tr>
+    </table>
+    <form method="post" action="parkeren.html?action=parkSubmit">
+        <h2>Reserveren</h2>
+        <table>
+            <tr><td>Grootte</td><td><select name="grootte" id="grootte">
+                <option value="personenwagen" >personenwagen</option>
+                <option value="bus">bus</option>
+                <option value="vrachtwagen">vrachtwagen</option>
+            </select></td></tr>
+            <tr>
+                <td>Van</td>
+                <td><input type="date" name="begindatum" id="begindatum" placeholder="dd/mm/jjjj" required></td>
+            </tr>
+            <tr>
+                <td>Tot</td>
+                <td><input type="date" name="einddatum" id="einddatum" placeholder="dd/mm/jjjj" required></td>
+            </tr>
+            <tr>
+                <td>Naam</td>
+                <td><input type="text" placeholder="Lastname Firstname" name="name" id="name" required></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email" placeholder="exampe@email.com" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Nummerplaat</td><td><input type="tel" placeholder="00/000 00 00" name="nummerplaat" id="nummerplaat"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input id="submit" type="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
 </div>
 <footer>
 
